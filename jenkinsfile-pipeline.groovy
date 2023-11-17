@@ -6,7 +6,7 @@ node('Jenkins-Agent') {
             "ANT_HOME=${resolvedAntHome}"
             ,"JAVA_HOME=${resolvedJdkHome}"
             ,"PATH=${resolvedAntHome}/bin;${resolvedJdkHome}/bin;${env.PATH}"
-            ,"ANT_OPTS=-XX:PermSize=512m -XX:MaxPermSize=512m"
+//            ,"ANT_OPTS=-XX:PermSize=512m -XX:MaxPermSize=512m"
     ]) {
         stage('Checkout') {
             checkout([
