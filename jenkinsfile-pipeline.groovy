@@ -27,8 +27,8 @@ node('Jenkins-Agent') {
             }
         }
         stage('Run'){
-            dir("./ant-sample/build/jar"){
-                bat "${end.JAVA_HOME}\\bin\\java.exe -jar ant-sample.jar"
+            dir("./ant-sample"){
+                bat "${env.JAVA_HOME}\\bin\\java.exe -jar ${env.WORKSPACE}\\build\\jar\\ant-sample.jar"
             }
         }
     }
