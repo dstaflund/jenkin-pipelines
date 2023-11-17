@@ -23,7 +23,7 @@ node('Jenkins-Agent') {
         }
         stage('Build') {
             dir("./ant-sample") {
-                bat "${env.ANT_HOME}\\bin\\ant.bat -f build.xml"
+                bat "${env.ANT_HOME}\\bin\\ant.bat -f ${env.WORKSPACE}\\build.xml"
             }
         }
     }
