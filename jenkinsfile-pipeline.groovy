@@ -1,4 +1,4 @@
-node('built-in') {
+node('Jenkins-Agent') {
     def resolvedAntHome = tool name: 'apache-ant-1.10.14', type: 'hudson.tasks.Ant$AntInstallation'
     def resolvedJdkHome = tool name: 'jdk-17.0.2', type: 'hudson.model.JDK'
 
