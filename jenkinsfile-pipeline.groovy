@@ -11,7 +11,7 @@ node('Jenkins-Agent') {
         stage('Checkout') {
             checkout([
                     $class                           : 'GitSCM',
-                    branches                         : [[name: 'origin/main']],
+                    branches                         : [[name: 'origin/master']],
                     doGenerateSubmoduleConfigurations: false,
                     extensions                       : [
                             [$class: 'CheckoutOption', timeout: 15],
