@@ -13,6 +13,6 @@ node('Jenkins-Agent') {
         ])
     }
 
-    def flow = load pwd() + 'jenkinsfile.groovy'
+    def flow = load pwd() + '\\jenkinsfile.groovy'
     flow.buildAndRun()
 }
